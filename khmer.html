@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>កិច្ចការអនុវត្ត កិច្ចការស្នូលទី១ - GEIP-AF</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Moul&family=Siemreap&display=swap');
+
+        body {
+            font-family: 'Siemreap', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-family: 'Moul', serif;
+            font-size: 18px;
+            color: #003366;
+            margin: 5px 0;
+            font-weight: normal;
+        }
+
+        .header h2 {
+            font-family: 'Moul', serif;
+            font-size: 16px;
+            color: #1a5276;
+            margin: 5px 0;
+            font-weight: normal;
+        }
+
+        .header h3 {
+            font-size: 15px;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .assignment-title {
+            text-align: center;
+            background-color: #eaf2f8;
+            padding: 12px;
+            border-radius: 6px;
+            font-family: 'Moul', serif;
+            color: #003366;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        .info-box {
+            background: #fff9e6;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .info-box h4 {
+            margin: 0 0 8px 0;
+            color: #d35400;
+        }
+
+        .section-title {
+            font-family: 'Moul', serif;
+            font-size: 15px;
+            color: #003366;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        .prompt-container {
+            background-color: #f8f9fa;
+            border: 1px solid #e1e8ed;
+            border-left: 4px solid #003366;
+            padding: 15px 20px;
+            border-radius: 4px;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .question-card {
+            background: #fff;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .question-text {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .options-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .options-list li {
+            padding: 4px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .options-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: 1px solid #7f8c8d;
+        }
+
+        .correct-answer {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .submission-info {
+            background: #e8f8f5;
+            border: 1px solid #a3e4d7;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 40px;
+        }
+
+        .submission-info h4 {
+            margin: 0 0 10px 0;
+            color: #16a085;
+            font-family: 'Moul', serif;
+            font-size: 14px;
+        }
+
+        ul.instructions {
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Section -->
+    <div class="header">
+        <h1>សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ</h1>
+        <h2>មហាវិទ្យាល័យអប់រំ</h2>
+        <h3>គម្រោងកែលម្អការអប់រំចំណេះទូទៅ (GEIP-AF)</h3>
+        <h3>កម្មវិធីលើកកម្ពស់គុណវុឌ្ឍគណៈគ្រប់គ្រងសាលារៀន និងគ្រូបង្រៀន (GEIP-AF) ថ្នាក់វិញ្ញាបនបត្រអប់រំបឋមសិក្សា ១៥ក្រេឌីត</h3>
+    </div>
+
+    <!-- Title -->
+    <div class="assignment-title">
+        កិច្ចការអនុវត្ត៖ កិច្ចការស្នូលទី១
+    </div>
+
+    <!-- Info Box -->
+    <div class="info-box">
+        <h4>ព័ត៌មានកាលបរិច្ឆេទ</h4>
+        <strong>កាលបរិច្ឆេទចាប់ផ្តើម៖</strong> ថ្ងៃសៅរ៍ ទី២៤ ខែតុលា ឆ្នាំ២០២៦<br>
+        <strong>កាលបរិច្ឆេទផុតកំណត់៖</strong> ថ្ងៃសុក្រ ទី៦ ខែវិច្ឆិកា ឆ្នាំ២០២៦
+    </div>
+
+    <!-- Section 1: Prompt -->
+    <div class="section-title">ផ្នែកទី១៖ PROMPT សម្រាប់បង្កើតសំណួរតេស្ត (Prompt Writing)</div>
+    <div class="prompt-container">
+        <strong>Prompt:</strong><br>
+        "សូមដើរតួជាគ្រូបង្រៀនកម្រិតបឋមសិក្សាថ្នាក់ទី៤ ផ្នែកមុខវិជ្ជាវិទ្យាសាស្ត្រ និងភាសាខ្មែរ។ ចូរបង្កើតសំណួរតេស្តជាទម្រង់ពហុជ្រើសរើស (Multiple Choice Questions) ចំនួន ២០ សំណួរ ដោយក្នុងមួយសំណួរមានជម្រើស ៤ (ក, ខ, គ, ឃ) និងមានចម្លើយត្រឹមត្រូវតែមួយគត់។ សំណួរទាំងនោះត្រូវស្របតាមកម្មវិធីសិក្សាលម្អិតថ្នាក់ទី៤ ដោយផ្ដោតលើការវាស់វែងចំណេះដឹង មូលដ្ឋាន និងការគិតបែបអនុវត្ត។ នៅចុងបញ្ចប់នៃសំណួរនីមួយៗ សូមបញ្ជាក់ចម្លើយត្រឹមត្រូវផងដែរ។"
+    </div>
+
+    <!-- Section 2: 20 Multiple Choice Questions -->
+    <div class="section-title">ផ្នែកទី២៖ សំណួរតេស្តពហុជ្រើសរើស ចំនួន ២០ សំណួរ (ថ្នាក់ទី៤)</div>
+
+    <!-- Question 1 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ១៖ តើសរីរាង្គមួយណា នៃរាងកាយមនុស្សដែលមាននាទីប្រូមឈាមទៅកាន់ផ្នែកផ្សេងៗ?</div>
+        <ul class="options-list">
+            <li>ក. សួត</li>
+            <li>ខ. បេះដូង</li>
+            <li>គ. ក្រពះ</li>
+            <li>ឃ. ថ្លើម</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. បេះដូង</div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ២៖ តើរុក្ខជាតិប្រើប្រាស់អ្វីខ្លះសម្រាប់ធ្វើរស្មីសំយោគដើម្បីផលិតអាហារ?</div>
+        <ul class="options-list">
+            <li>ក. ពន្លឺព្រះអាទិត្យ ទឹក និងឧស្ម័នកាបូនិច</li>
+            <li>ខ. ទឹក និងឧស្ម័នអុកស៊ីសែន</li>
+            <li>គ. ជី ទឹក និងខ្យល់ត្រជាក់</li>
+            <li>ឃ. ពន្លឺព្រះអាទិត្យ និងឧស្ម័នអាសូត</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ក. ពន្លឺព្រះអាទិត្យ ទឹក និងឧស្ម័នកាបូនិច</div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ៣៖ នៅក្នុងភាសាខ្មែរ តើពាក្យ "នាម" មានន័យថាម៉េច?</div>
+        <ul class="options-list">
+            <li>ក. ពាក្យសម្រាប់សំដែងសកម្មភាព</li>
+            <li>ខ. ពាក្យសម្រាប់ហៅឈ្មោះ មនុស្ស សត្វ រុក្ខជាតិ វត្ថុ ឬទីកន្លែង</li>
+            <li>គ. ពាក្យសម្រាប់បញ្ជាក់លក្ខណៈឲ្យកិរិយា</li>
+            <li>ឃ. ពាក្យសម្រាប់ភ្ជាប់ពាក្យ និងពាក្យ</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. ពាក្យសម្រាប់ហៅឈ្មោះ មនុស្ស សត្វ រុក្ខជាតិ វត្ថុ ឬទីកន្លែង</div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ៤៖ តើភពមួយណាដែលនៅជិតព្រះអាទិត្យជាងគេបង្អស់?</div>
+        <ul class="options-list">
+            <li>ក. ភពសុក្រ</li>
+            <li>ខ. ភពផែនដី</li>
+            <li>គ. ភពពុធ</li>
+            <li>ឃ. ភពអង្គារ</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ គ. ភពពុធ</div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ៥៖ តើពាក្យផ្ទុយនៃពាក្យ "ប្រុងប្រយ័ត្ន" គឺអ្វី?</div>
+        <ul class="options-list">
+            <li>ក. ប្រយ័ត្នប្រយែង</li>
+            <li>ខ. ធ្វើប្រហែស</li>
+            <li>គ. យកចិត្តទុកដាក់</li>
+            <li>ឃ. ស្ទាក់ស្ទើរ</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. ធ្វើប្រហែស</div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ៦៖ តើការកកកុញនៃសំណល់ប្លាស្ទិកជះឥទ្ធិពលអវិជ្ជមានអ្វីខ្លះដល់បរិស្ថាន?</div>
+        <ul class="options-list">
+            <li>ក. ធ្វើឲ្យដីមានជីជាតិ</li>
+            <li>ខ. បំពុលដី ទឹក និងប៉ះពាល់ដល់ជីវិតសត្វ</li>
+            <li>គ. ជួយឲ្យដើមឈើដុះលឿន</li>
+            <li>ឃ. បង្កើនបរិមាណទឹកភ្លៀង</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. បំពុលដី ទឹក និងប៉ះពាល់ដល់ជីវិតសត្វ</div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ៧៖ តើសញ្ញាខណ្ឌ ( ៕ ) ប្រើប្រាស់សម្រាប់ធ្វើអ្វី?</div>
+        <ul class="options-list">
+            <li>ក. ប្រើនៅពេលចោទសួរ</li>
+            <li>ខ. ប្រើនៅចុងបញ្ចប់នៃល្បះបរិបូណ៌</li>
+            <li>គ. ប្រើសម្រាប់កាត់ឃ្លាខ្លីៗ</li>
+            <li>ឃ. ប្រើនៅពេលសម្តែងការភ្ញាក់ផ្អើល</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. ប្រើនៅចុងបញ្ចប់នៃល្បះបរិបូណ៌</div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ៨៖ តើទឹកប្រែប្រួលជារូបធាតុរឹង (ទឹកកក) នៅសីតុណ្ហភាពប៉ុន្មាន?</div>
+        <ul class="options-list">
+            <li>ក. $100^\circ\text{C}$</li>
+            <li>ខ. $50^\circ\text{C}$</li>
+            <li>គ. $0^\circ\text{C}$</li>
+            <li>ឃ. $10^\circ\text{C}$</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ គ. $0^\circ\text{C}$</div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ៩៖ តើពាក្យមួយណាជា "កិរិយាសព្ទ"?</div>
+        <ul class="options-list">
+            <li>ក. តុ</li>
+            <li>ខ. រត់</li>
+            <li>គ. ស្អាត</li>
+            <li>ឃ. រហ័ស</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. រត់</div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ១០៖ តើសត្វក្រុមណាដែលចាត់ទុកជា "សត្វឥតឆ្អឹងកង"?</div>
+        <ul class="options-list">
+            <li>ក. ត្រី និងឆ្កែ</li>
+            <li>ខ. បក្សី និងកង្កែប</li>
+            <li>គ. មេអំបៅ និងជន្លេន</li>
+            <li>ឃ. ពស់ និងអណ្តើក</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ គ. មេអំបៅ និងជន្លេន</div>
+    </div>
+
+    <!-- Question 11 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ១១៖ នៅក្នុងល្បះ "សិស្សខិតខំរៀនសូត្រ" តើពាក្យ "ខិតខំ" ជាអ្វី?</div>
+        <ul class="options-list">
+            <li>ក. គុណនាម</li>
+            <li>ខ. កិរិយាវិសេសន៍</li>
+            <li>គ. នាម</li>
+            <li>ឃ. សព្វនាម</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. កិរិយាវិសេសន៍</div>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ១២៖ តើប្រភពថាមពលកកើតឡើងវិញមានអ្វីខ្លះ?</div>
+        <ul class="options-list">
+            <li>ក. ប្រេងកាត និងធ្យូងថ្ម</li>
+            <li>ខ. ពន្លឺព្រះអាទិត្យ និងខ្យល់</li>
+            <li>គ. ឧស្ម័នធម្មជាតិ</li>
+            <li>ឃ. ផ្លាស្ទិក</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. ពន្លឺព្រះអាទិត្យ និងខ្យល់</div>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ១៣៖ តើពាក្យ "សប្បុរស" មានន័យដូចម្តេច?</div>
+        <ul class="options-list">
+            <li>ក. ដែលមានចិត្តល្អ ចិត្តទូលាយ ចេះជួយអ្នកដទៃ</li>
+            <li>ខ. ដែលមានកំហឹងច្រើន</li>
+            <li>គ. ដែលកំណាញ់ស្កើច</li>
+            <li>ឃ. ដែលចូលចិត្តធ្វើបាបគេ</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ក. ដែលមានចិត្តល្អ ចិត្តទូលាយ ចេះជួយអ្នកដទៃ</div>
+    </div>
+
+    <!-- Question 14 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ១៤៖ តើសរីរាង្គវិញ្ញាណមួយណា用於ទទួលដឹងក្លិន?</div>
+        <ul class="options-list">
+            <li>ក. អណ្តាត</li>
+            <li>ខ. ត្រចៀក</li>
+            <li>គ. ច្រមុះ</li>
+            <li>ឃ. ស្បែក</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ គ. ច្រមុះ</div>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ១៥៖ តើការបំផ្លាញព្រៃឈើអាចបណ្តាលឲ្យមានផលប៉ះពាល់អ្វីខ្លះ?</div>
+        <ul class="options-list">
+            <li>ក. កើនឡើងនូវគ្រោះរាំងស្ងួត និងការបាក់ដី</li>
+            <li>ខ. ធ្វើឲ្យធាតុអាកាសត្រជាក់ល្អ</li>
+            <li>គ. បង្កើតជម្រកសត្វព្រៃកាន់តែច្រើន</li>
+            <li>ឃ. គ្មានផលប៉ះពាល់អ្វីទេ</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ក. កើនឡើងនូវគ្រោះរាំងស្ងួត និងការបាក់ដី</div>
+    </div>
+
+    <!-- Question 16 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ១៦៖ តើពាក្យ "សាលារៀន" ជាប្រភេទពាក្យអ្វី?</div>
+        <ul class="options-list">
+            <li>ក. ពាក្យទោល</li>
+            <li>ខ. ពាក្យផ្សំ</li>
+            <li>គ. ពាក្យជាន់</li>
+            <li>ឃ. គុណនាម</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. ពាក្យផ្សំ</div>
+    </div>
+
+    <!-- Question 17 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ១៧៖ តើវីតាមីន C ភាគច្រើនមាននៅក្នុងអាហារប្រភេទណា?</div>
+        <ul class="options-list">
+            <li>ក. សាច់ជ្រូក និងសាច់គោ</li>
+            <li>ខ. ផ្លែឈើជូរៗ ដូចជា ក្រូច និងស្វាយ</li>
+            <li>គ. បាយ និងនំបុ័ង</li>
+            <li>ឃ. ប្រេងរុក្ខជាតិ</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. ផ្លែឈើជូរៗ ដូចជា ក្រូច និងស្វាយ</div>
+    </div>
+
+    <!-- Question 18 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ១៨៖ នៅក្នុងអត្ថបទអាន តើធាតុផ្សំសំខាន់ដើម្បីយល់ន័យអត្ថបទគឺអ្វី?</div>
+        <ul class="options-list">
+            <li>ក. ការអានរហ័សដោយមិនខ្វល់ពីន័យ</li>
+            <li>ខ. ការយល់ពាក្យគន្លឹះ និងគំនិតសំខាន់នៃអត្ថបទ</li>
+            <li>គ. ការមើលតែរូបភាព</li>
+            <li>ឃ. ការរំលងទំព័រ</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. ការយល់ពាក្យគន្លឹះ និងគំនិតសំខាន់នៃអត្ថបទ</div>
+    </div>
+
+    <!-- Question 19 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ១៩៖ តើដីប្រភេទណាដែលសមស្របបំផុតសម្រាប់ការដាំដុះដំណាំទូទៅ?</div>
+        <ul class="options-list">
+            <li>ក. ដីខ្សាច់សុទ្ធ</li>
+            <li>ខ. ដីល្បាយ (មានលាយមមោក)</li>
+            <li>គ. ដីឥដ្ឋសុទ្ធ</li>
+            <li>ឃ. ដីថ្ម</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. ដីល្បាយ (មានលាយមមោក)</div>
+    </div>
+
+    <!-- Question 20 -->
+    <div class="question-card">
+        <div class="question-text">សំណួរទី ២០៖ តើសញ្ញាសួរ ( ? ) ត្រូវប្រើប្រាស់ក្នុងល្បះប្រភេទណា?</div>
+        <ul class="options-list">
+            <li>ក. ល្បះប្រាប់ព័ត៌មាន</li>
+            <li>ខ. ល្បះសំណួរ</li>
+            <li>គ. ល្បះបញ្ជា</li>
+            <li>ឃ. ល្បះឧទាន</li>
+        </ul>
+        <div class="correct-answer">ចម្លើយត្រឹមត្រូវ៖ ខ. ល្បះសំណួរ</div>
+    </div>
+
+    <!-- Submission Instructions -->
+    <div class="submission-info">
+        <h4>របៀបបញ្ចូល និងប្រគល់កិច្ចការ</h4>
+        <ul class="instructions">
+            <li>ភ្ជាប់មកជាមួយនូវ Prompt និងសំណួរពហុជ្រើសរើសចំនួន ២០សំណួរ។</li>
+            <li>រក្សាទុកជា <strong>File Word</strong> (.docx)។</li>
+            <li>រក្សាទុកជា <strong>File PDF</strong> (.pdf)។</li>
+            <li>បញ្ចូល/អាប់ឡូតតាមរយៈ <strong>Google Form</strong> ដែលបានផ្តល់ជូន។</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+```eof
+
+ខ្ញុំបានរៀបចំឯកសារ HTML រួចរាល់ហើយ ដោយរួមបញ្ចូល៖
+1. **Prompt** សម្រាប់បង្កើតសំណួរតេស្ត។
+2. **សំណួរតេស្តពហុជ្រើសរើសចំនួន ២០ សំណួរ** សម្រាប់កម្រិតបឋមសិក្សា (ថ្នាក់ទី៤ លើមុខវិជ្ជាវិទ្យាសាស្ត្រ និងភាសាខ្មែរ) ព្រមទាំងមានចម្លើយត្រឹមត្រូវ។
+3. ទម្រង់ស្អាតបាតតាមលក្ខខណ្ឌតម្រូវ ព្រមទាំងព័ត៌មានកាលបរិច្ឆេទ និងរបៀបបញ្ចូលកិច្ចការ។
